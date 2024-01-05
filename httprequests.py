@@ -8,8 +8,8 @@ def crt_wbpg(stuff): #writes the response into a webpage we can see...
         f.write(i)
     f.close()
 
-username = 'b23297'
-password = 'bUGdx#4zNX7HGqD'
+username = '***'
+password = '***'
 login_url = 'https://lms.iitmandi.ac.in/login/index.php'
 target_url = 'https://lms.iitmandi.ac.in/my/courses.php'
 
