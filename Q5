@@ -15,4 +15,12 @@ now, i tried to use his code snippets, while modifying them (since there might h
 i realised i just needed to just copy his code and run it, just changing the login page url. Because apparently, the 'logintoken' was in a 'form' element with class as 'hidden'
 in both cases (his and mine). 
 
-Upon more research and some help from chatGPT, i wrote 'httprequests.py' (should be included in this flolder) as my testing python file to try to login into lms webpage.
+Upon more research and some help from chatGPT, i wrote 'httprequests.py' (should be included in this flolder) as my testing python file to try to login into lms webpage. I was
+trying to input the login credentials and get the response and wrote it in another file named 'testing.html' to see what it returned.
+
+Now, having run this file multiple times, changing something or even without changing anything, hoping it would just work, it didnt work. So, on more googling i found another 
+library but this time it was a javascript library. Again, this lib claimed to do exactly what i was trying to do. It too claimed to login to a website using get requests. Now
+not bring very familiar with js, i still tried to run it, but it didnt work. So i switched back to python. 
+
+Finally, i discovered 'playright' library in python (i had found a similar lib in js, called puppeteer, but being unfamiliar with js i didnt go with it). Now using playright,
+i could finally login and get the course content from lms.
