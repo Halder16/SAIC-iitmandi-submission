@@ -24,3 +24,10 @@ not bring very familiar with js, i still tried to run it, but it didnt work. So 
 
 Finally, i discovered 'playright' library in python (i had found a similar lib in js, called puppeteer, but being unfamiliar with js i didnt go with it). Now using playright,
 i could finally login and get the course content from lms.
+
+Before discovering playright, i realised that even after we establish a session using requests, and login, it doesnt work properly. So using playright in headless=Trueode, i could see what is really the code doing. And i found that the best way to do what i wanted was to try to access the target url first(instead of login first), then the target url itself leads us to the login page, so we inout our credentials and boom we in!
+
+At this point we can just read the html file contents and get what we want!
+Now that i see whats in the html file, i use string methods in python to somehow acquire the assignment date and the course names, etc. 
+
+Now we can easily manipulate the data we have to do what we want.
