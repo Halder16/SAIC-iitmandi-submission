@@ -2,6 +2,8 @@ import requests as requests
 import lxml.html
 import time
 
+#i used this script initially to try things out
+
 def crt_wbpg(stuff): #writes the response into a webpage we can see...
     f = open(r'C:/Users/sohan/Desktop/code/challenge_5/testing.html','w',errors='ignore')
     for i in stuff:
