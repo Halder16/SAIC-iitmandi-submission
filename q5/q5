@@ -30,7 +30,13 @@ Before discovering playright, i realised that even after we establish a session 
 uld see what is really the code doing. And i found that the best way to do what i wanted was to try to access the target url first(instead of login first), then the target url 
 itself leads us to the login page, so we inout our credentials and boom we in!
 
-At this point we can just read the html file contents and get what we want!
-Now that i see whats in the html file, i use string methods in python to somehow acquire the assignment date and the course names, etc. 
+Using this method, i got the course list by using the link to the 'courses' tab, the then using the course list, which had linkks to all the respective courses, i went in 
+the courses pages to get the assignment info.
 
-Now we can easily manipulate the data we have to do what we want.
+i wrote functions to retrieve the data and turn it into something that we can use. 
+
+For the sending email part, i tried using the smtp module in python, and gmail as the relay server to send an test email. But it didnt work and kept throwing a authorization
+error. I tried resolving it by going to the google api console and enable gmail api for the test account, but even afte that it didnt work.
+
+So finally, i couldnt get the script to send an email with the said information. But if i had more time, i would maybe try different relays instead of gmail to send the email.
+
